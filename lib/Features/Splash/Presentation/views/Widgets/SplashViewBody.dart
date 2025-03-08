@@ -1,4 +1,3 @@
-import 'package:bookly/Constants.dart';
 import 'package:bookly/Core/utils/assetsData.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +9,13 @@ class SplashViewBody extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [Image.asset(Assetsdata.logo)],
+      children: [
+        Image.asset(Assetsdata.logo),
+        Text(
+          'Read free books',
+          textAlign: TextAlign.center,
+        ),
+      ],
     );
   }
 }
